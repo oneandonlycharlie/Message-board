@@ -1,5 +1,39 @@
 header {
     display: flex;
-    justify-content:space-around;
-    align-items: center;
+    justify-content:center;
+    align-items:flex-start;
+    .title {
+        margin: 0px 20px;
+        h3 {
+            font-size:2rem;
+            margin: 5px 5px 0px 0px;
+        }
+    }
+    button {
+        margin: 20px 10px;
+        border-radius: 20px;
+        border: none;
+        background-color: var(--secondary-color);
+
+    }
+    button:hover {
+        background-color: var(--font-color);
+        cursor: pointer;
+        box-icon.icon {
+        fill:var(--secondary-color);
+        transform: scale(1.2);
+    }
+    }
+    box-icon.icon {
+        margin:5px 10px;
+        fill:var(--font-color)
+    }
+    button.edit {
+        position:fixed;
+        right:15px;
+    }
+    button.switch {
+        position:fixed;
+        left:15px;
+    }
 }

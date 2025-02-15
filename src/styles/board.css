@@ -6,7 +6,7 @@ main {
 
 .content-container {
     margin:20px 50px;
-    border: 2px #427AA1 solid;
+    border: 2px var(--primary-color) solid;
     height:90%;
     width:80%;
     border-radius: 10px;
@@ -16,7 +16,9 @@ main {
 .entry {
     height:12%;
     text-align: left;
-    margin: 20px 30px 10px 30px;
+    padding: 20px 20px 5px 20px;
+    margin:10px 20px;
+    border-radius: 10px;
     .time {
         margin-left:20px;
         font-size: 1rem;
@@ -25,8 +27,20 @@ main {
         font-size: 1.2rem;
     }
     .message {
-        border-bottom: 1px rgba(255, 255, 255, 0.092) solid;
+        border-bottom: 1px var(--line-color) solid;
         padding: 0px 0px 5px 20px;
         margin-top: 8px;
     }
+}
+
+.entry:hover {
+    background-color: var(--hover-color);
+}
+
+h2 {
+    margin: 30px 0px 0px 0px;
+    font-weight: 400;
+    width:80%;
+    text-align: left;
+    color:var(--line-color);
 }
