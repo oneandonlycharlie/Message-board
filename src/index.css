@@ -1,14 +1,36 @@
-:root {
+:root.dark {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color:#EBF2FA;
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  --primary-color:#427AA1;
+  --secondary-color:#064789;
+  --line-color:#ebf2fa41;
+  --font-color:#CEDFF3;
+  --hover-color:rgba(0, 0, 0, 0.5)
 }
+
+:root.light {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary-color:#5D8731;
+  --secondary-color:#a5be00;
+  --line-color:#0f101180;
+  --font-color:#102842;
+  --hover-color:rgba(0, 0, 0, 0.05)
+
+}
+

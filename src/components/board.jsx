@@ -4,7 +4,8 @@ function Board() {
 
     return(
         <>
-            <h3>Dear past me ..</h3>
+            <h2>"Dear past me ..."</h2>
+            <div className="line"></div>
             <div className="content-container">
                 <Message />
                 <Message />
