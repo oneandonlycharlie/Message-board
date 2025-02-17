@@ -11,8 +11,6 @@ const messageRouter = require("./controllers/message")
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
-// database connected
-
 app.use("/message", messageRouter)
 
 
