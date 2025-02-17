@@ -78,5 +78,10 @@ header {
         bottom:0px;
         margin:0px;
     }
-
+    span {
+        color:rgb(221, 7, 7);
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-left: 10px;
+    }
 }

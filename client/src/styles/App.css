@@ -1,0 +1,39 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color:var(--font-color);
+}
+
+header {
+  height:12vh;
+  width:100%;
+}
+
+main {
+  height:80vh;
+  width:100%;
+}
+
+button {
+    margin: 20px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+}
+button:hover {
+    background-color: var(--font-color);
+    cursor: pointer;
+    box-icon.icon {
+    fill:var(--secondary-color);
+    transform: scale(1.2);
+    }
+    color:var(--secondary-color);
+    font-weight: 600;
+}   

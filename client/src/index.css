@@ -15,7 +15,8 @@
   --secondary-color:#064789;
   --line-color:#ebf2fa41;
   --font-color:#CEDFF3;
-  --hover-color:rgba(0, 0, 0, 0.5)
+  --hover-color:rgba(0, 0, 0, 0.5);
+  --background-color:rgb(21, 20, 20);
 }
 
 :root.light {
@@ -30,7 +31,7 @@
   --secondary-color:#a5be00;
   --line-color:#0f101180;
   --font-color:#102842;
-  --hover-color:rgba(0, 0, 0, 0.05)
-
+  --hover-color:rgba(0, 0, 0, 0.05);
+  --background-color:white;
 }
 

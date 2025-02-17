@@ -4,7 +4,7 @@ function Board() {
 
     return(
         <>
-            <h2>"Dear past me ..."</h2>
+            <h1>"Dear past me ..."</h1>
             <div className="line"></div>
             <div className="content-container">
                 <Message />
@@ -28,5 +28,6 @@ function Message({name="Charlie", message="You got this!", time="today"}){
         </div>
     )
 }
+
 
 export default Board
