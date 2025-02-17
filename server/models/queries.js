@@ -1,29 +1,25 @@
 const pool = require("./pool")
 
 const createTable = async()=>{
-    await pool(`
+    await pool.query(`
         CREATE TABLE IF NOT EXISTS messages (
             massage_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-            massage VARCHAR (255),
-            name VARCHAR (255)
+            message VARCHAR (255),
+            name VARCHAR (255),
+            time VARCHAR (255)
         )
     `);
     console.log("Message table created")
 }
 
+createTable();
 
 const logMessage = async(name, message)=>{
+    const time = new Date()
     await pool.query(`
-        CREATE TABLE IF NOT EXISTS messages (
-            massage_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-            message VARCHAR (255),
-            name VARCHAR (255)
-        )
-    `);
-    await pool.query(`
-        INSERT INTO messages (message,name)
-        VALUES ($1,$2)
-        `,[message,name]);
+        INSERT INTO messages (message,name,time)
+        VALUES ($1,$2,$3)
+        `,[message,name,time]);
     console.log("new message logged!")
 }
 

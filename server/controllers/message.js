@@ -6,7 +6,8 @@ const db = require("../models/queries")
 messageRouter.get("/", async(req,res)=>{
     console.log("received get request")
     const data = await db.getAllMessages()
-    res.json({data})
+    res.json({data});
+    res.end()
 })
 
 messageRouter.post("/", async(req,res)=>{
