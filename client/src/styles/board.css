@@ -5,6 +5,7 @@ main {
 }
 
 .content-container {
+    position: relative;
     margin:20px 50px;
     border: 2px var(--primary-color) solid;
     height:90%;
@@ -20,8 +21,8 @@ main {
     margin:10px 20px;
     border-radius: 10px;
     .time {
-        margin-left:20px;
-        font-size: 1rem;
+        margin-left:10px;
+        font-size: 0.8rem;
     }
     .name {
         font-size: 1.2rem;
@@ -32,6 +33,7 @@ main {
         margin-top: 8px;
     }
 }
+
 
 .entry:hover {
     background-color: var(--hover-color);
@@ -46,3 +48,28 @@ h1 {
     color:var(--line-color);
 }
 
+span.count {
+    position: absolute;
+    top:-30px;
+    right:10px;
+}
+
+button.left {
+    position: absolute;
+    left: -10%;
+    top:40%;
+}
+
+button.right {
+    position: absolute;
+    right:-10%;
+    top:40%;
+}
+
+button.left, button.right {
+    background-color: transparent;
+    box-icon.icon {
+        margin:5px 10px;
+        fill:var(--font-color)
+    }
+}
