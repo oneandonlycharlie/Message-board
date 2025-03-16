@@ -26,16 +26,19 @@ function Nav(){
             <div className='title'>
                 <h3>Message Board</h3>
             </div>
-            <button onClick={openWindow}className='edit'><box-icon class='icon'name='edit-alt'></box-icon></button>
+            <button onClick={openWindow}
+                className='edit'><box-icon class='icon'name='edit-alt'></box-icon></button>
             <button onClick={switchThme}
-            className='switch'><box-icon class='icon' name='sun'></box-icon></button>
+                className='switch'><box-icon class='icon' name='sun'></box-icon></button>
             {isOpen? <NewMessage closeWindow={closeWindow} /> : <></>}
         </>
     )
 }
 
 function NewMessage({closeWindow}){
+
 const [errorMessage,setMessage] = useState({name:"",message:""})
+
 const validateMessage = (e)=>{
     console.log(e)
     const name = e.target[1].value;
@@ -43,16 +46,12 @@ const validateMessage = (e)=>{
     // if user inputs empty string, show error message and stop form submission
     if (name.trim() == ""){
         setMessage((prev)=>({ ...prev, name:"Please tell us your name."}))
-        console.log(name.trim() == "")
-        console.log(errorMessage)
         e.preventDefault();
     } else {
         setMessage((prev)=>({ ...prev, name:""}))
     } 
     if (message.trim() == ""){
-        console.log(message.trim() == "")
         setMessage((prev)=>({ ...prev, message:"Your massage is empty."}))
-        console.log(errorMessage)
         e.preventDefault()
     } else {
         setMessage((prev)=>({ ...prev, message:""}))

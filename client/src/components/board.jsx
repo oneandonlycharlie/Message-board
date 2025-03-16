@@ -50,7 +50,6 @@ function Board({messages}) {
     return(
         <>
             <h1>"Dear past me ..."</h1>
-            <div className="line"></div>
             <div className="content-container">
                 {displayMessages.map((message)=>(
                     <Message 
@@ -64,9 +63,10 @@ function Board({messages}) {
                     <button className="left"
                             onClick={hendleLeftClick}
                     ><box-icon class='icon' name='chevron-left' ></box-icon></button>}
-                {startNumber+5 <= messages.length && <button className="right"
-                        onClick={hendleRightClick}
-                ><box-icon class='icon' name='chevron-right'></box-icon></button>}
+                {startNumber+5 <= messages.length && 
+                    <button className="right"
+                            onClick={hendleRightClick}
+                    ><box-icon class='icon' name='chevron-right'></box-icon></button>}
             </div>
         </>
     )

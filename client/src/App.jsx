@@ -22,7 +22,7 @@ function App() {
       <main>
         <Board messages={messages}/>
       </main>
-      <footer>Contacts goes here</footer>
+      <footer><a href=""><img src="github-mark.svg" alt="" /></a></footer>
     </>
   )
 }
